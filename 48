@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n,i,a,isprime  ;
+	
+	cout <<"enter a positive integer: ";
+	cin>>a;
+	cout <<"all the prime numbers between 2 to "<<a<< " ="<<endl; 
+	
+	for (i= 2;i<=a ; ++i)
+	{
+		isprime = 1;
+		for (n = 2;n<=i/2;i++)
+		{
+			if (i%n == 0)
+			 isprime = 0;
+			 break;
+		}
+	           if (isprime==1 && a!=1)
+		cout     << i<<endl;
+	}
+
+	
+	return 0;
+}
